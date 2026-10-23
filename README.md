@@ -1,75 +1,116 @@
-# React + TypeScript + Vite
+# ShopSphere — React Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A portfolio-grade e-commerce frontend designed for the larger ShopSphere distributed e-commerce project.
 
-Currently, two official plugins are available:
+## Current features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Responsive storefront and mobile navigation
+- Hero, categories, product catalog and product details
+- Search, category filtering, sorting and pagination
+- Wishlist and cart with local persistence
+- Checkout form with validation using React Hook Form
+- Mock authentication with customer/admin roles
+- Protected customer and admin routes
+- Admin dashboard, products, orders, inventory, users and analytics
+- Recharts dashboards
+- Dark mode using Context API
+- Redux Toolkit state management
+- RTK Query API layer
+- Axios base query and HTTP client
+- Debounced search hook
+- Memoized ProductCard
+- Error Boundary
+- Suspense + lazy-loaded routes
+- Image upload/preview dropzone
+- Toast notifications
+- Mock real-time order tracking
+- STOMP/WebSocket-ready service for backend integration
 
-## React Compiler
+## Main source structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```text
+src/
+├── assets/
+├── components/
+│   ├── AdminHeader/
+│   ├── AdminSidebar/
+│   ├── CategoryStrip/
+│   ├── Footer/
+│   ├── Header/
+│   ├── HeroSection/
+│   ├── ImageDropzone/
+│   ├── OrderTimeline/
+│   ├── ProductCard/
+│   ├── ProductGrid/
+│   ├── ProtectedRoute/
+│   ├── SearchBar/
+│   └── UI/
+├── contexts/
+├── data/
+├── features/
+│   ├── cart/
+│   ├── checkout/
+│   ├── orders/
+│   ├── productCatalog/
+│   └── wishlist/
+├── hooks/
+├── layouts/
+├── pages/
+│   └── admin/
+├── routes/
+├── services/
+├── store/
+├── styles/
+├── types/
+├── utils/
+├── App.tsx
+└── main.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+## Installation
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+From the existing Vite project root:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```powershell
+npm install react-router-dom @reduxjs/toolkit react-redux axios react-hook-form recharts @stomp/stompjs
 ```
+
+## Environment
+
+Create `.env` from `.env.example`.
+
+Development:
+
+```env
+VITE_API_BASE_URL=http://localhost:9191/api
+VITE_USE_MOCK_API=true
+VITE_WS_URL=ws://localhost:8080/ws
+```
+
+Backend integration:
+
+```env
+VITE_API_BASE_URL=http://localhost:9191/api
+VITE_USE_MOCK_API=false
+VITE_WS_URL=ws://localhost:8080/ws
+```
+
+## Run
+
+```powershell
+npm run dev
+```
+
+## Build
+
+```powershell
+npm run build
+```
+
+## Demo accounts
+
+Customer: `demo@shopsphere.com`
+
+Admin: `admin@shopsphere.com`
+
+Any password with at least 4 characters works in this frontend-only demo.

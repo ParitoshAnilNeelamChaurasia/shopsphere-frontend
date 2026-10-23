@@ -1,0 +1,2 @@
+# Run this from shopsphere-frontend
+npm install react-router-dom @reduxjs/toolkit react-redux axios react-hook-form recharts @stomp/stompjs

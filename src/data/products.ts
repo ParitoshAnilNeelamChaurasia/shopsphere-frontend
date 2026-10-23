@@ -1,0 +1,326 @@
+import type { Product } from '../types/models';
+
+export const mockProducts: Product[] = [
+  {
+    id: 101,
+    name: 'AeroBook Pro 14',
+    slug: 'aerobook-pro-14',
+    brand: 'Aero',
+    category: 'Electronics',
+    price: 74999,
+    originalPrice: 82999,
+    rating: 4.8,
+    reviews: 1248,
+    stock: 18,
+    image:
+      'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=80',
+      'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80',
+    ],
+    description:
+      'A premium 14-inch laptop built for developers, creators and everyday productivity with a crisp display and all-day battery life.',
+    badge: 'Best Seller',
+    specifications: {
+      Display: '14-inch 2.8K OLED',
+      Processor: 'Intel Core Ultra 7',
+      Memory: '16 GB',
+      Storage: '1 TB SSD',
+      Weight: '1.35 kg',
+    },
+  },
+  {
+    id: 102,
+    name: 'Pulse X1 Smartwatch',
+    slug: 'pulse-x1-smartwatch',
+    brand: 'Pulse',
+    category: 'Electronics',
+    price: 4999,
+    originalPrice: 6999,
+    rating: 4.5,
+    reviews: 892,
+    stock: 34,
+    image:
+      'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=80',
+      'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=900&q=80',
+    ],
+    description:
+      'A sleek smartwatch with AMOLED display, activity tracking, notifications and long battery life.',
+    badge: '20% OFF',
+    specifications: {
+      Display: '1.78-inch AMOLED',
+      Battery: 'Up to 10 days',
+      WaterResistance: '5 ATM',
+      Connectivity: 'Bluetooth 5.3',
+    },
+  },
+  {
+    id: 103,
+    name: 'SoundMax Air Pro',
+    slug: 'soundmax-air-pro',
+    brand: 'SoundMax',
+    category: 'Electronics',
+    price: 6999,
+    originalPrice: 8999,
+    rating: 4.7,
+    reviews: 1564,
+    stock: 27,
+    image:
+      'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=80',
+      'https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=900&q=80',
+    ],
+    description:
+      'Wireless over-ear headphones with adaptive noise cancellation and rich spatial sound.',
+    badge: 'Trending',
+    specifications: {
+      Driver: '40 mm',
+      Battery: '45 hours',
+      Connectivity: 'Bluetooth 5.4',
+      Charging: 'USB-C fast charge',
+    },
+  },
+  {
+    id: 104,
+    name: 'CoreFit Training Shoes',
+    slug: 'corefit-training-shoes',
+    brand: 'CoreFit',
+    category: 'Fashion',
+    price: 3199,
+    originalPrice: 4499,
+    rating: 4.4,
+    reviews: 513,
+    stock: 41,
+    image:
+      'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80',
+      'https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=900&q=80',
+    ],
+    description:
+      'Lightweight training shoes with a stable heel and responsive cushioning for daily workouts.',
+    badge: 'Popular',
+    specifications: {
+      Upper: 'Breathable mesh',
+      Sole: 'EVA + rubber',
+      Closure: 'Lace-up',
+      Use: 'Training / Running',
+    },
+  },
+  {
+    id: 105,
+    name: 'Urban Overshirt',
+    slug: 'urban-overshirt',
+    brand: 'Northline',
+    category: 'Fashion',
+    price: 1899,
+    originalPrice: 2599,
+    rating: 4.3,
+    reviews: 312,
+    stock: 16,
+    image:
+      'https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80',
+      'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=900&q=80',
+    ],
+    description:
+      'A structured overshirt designed for layered everyday outfits with a modern relaxed fit.',
+    badge: 'New',
+    specifications: {
+      Material: 'Cotton blend',
+      Fit: 'Relaxed',
+      Pattern: 'Solid',
+      Care: 'Machine wash',
+    },
+  },
+  {
+    id: 106,
+    name: 'Aura Table Lamp',
+    slug: 'aura-table-lamp',
+    brand: 'Luma',
+    category: 'Home',
+    price: 2299,
+    originalPrice: 2999,
+    rating: 4.6,
+    reviews: 228,
+    stock: 22,
+    image:
+      'https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=900&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=900&q=80',
+      'https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=900&q=80',
+    ],
+    description:
+      'Warm ambient lighting with a clean silhouette that works beautifully on desks and bedside tables.',
+    specifications: {
+      Material: 'Aluminium + glass',
+      Power: '12 W LED',
+      ColorTemperature: '2700 K',
+      Warranty: '1 year',
+    },
+  },
+  {
+    id: 107,
+    name: 'Nova Gaming Chair',
+    slug: 'nova-gaming-chair',
+    brand: 'Nova',
+    category: 'Gaming',
+    price: 10499,
+    originalPrice: 13999,
+    rating: 4.7,
+    reviews: 674,
+    stock: 11,
+    image:
+      'https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=900&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=900&q=80',
+      'https://images.unsplash.com/photo-1616628182502-2a0df6fb84d2?auto=format&fit=crop&w=900&q=80',
+    ],
+    description:
+      'Ergonomic gaming chair with adjustable lumbar support and a high-back reclining frame.',
+    badge: 'Staff Pick',
+    specifications: {
+      Recline: '90–135°',
+      Frame: 'Steel',
+      Cushion: 'High-density foam',
+      WeightCapacity: '120 kg',
+    },
+  },
+  {
+    id: 108,
+    name: 'KeyForge Mechanical Keyboard',
+    slug: 'keyforge-mechanical-keyboard',
+    brand: 'KeyForge',
+    category: 'Gaming',
+    price: 5799,
+    originalPrice: 6499,
+    rating: 4.8,
+    reviews: 941,
+    stock: 29,
+    image:
+      'https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=900&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=900&q=80',
+      'https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&fit=crop&w=900&q=80',
+    ],
+    description:
+      'Hot-swappable mechanical keyboard with tactile switches, compact layout and customizable backlight.',
+    badge: 'Hot',
+    specifications: {
+      Layout: '75%',
+      Switches: 'Tactile',
+      Connectivity: 'USB-C / Wireless',
+      Keycaps: 'Double-shot PBT',
+    },
+  },
+  {
+    id: 109,
+    name: 'PureGlow Skincare Set',
+    slug: 'pureglow-skincare-set',
+    brand: 'PureGlow',
+    category: 'Beauty',
+    price: 1499,
+    originalPrice: 1899,
+    rating: 4.5,
+    reviews: 388,
+    stock: 48,
+    image:
+      'https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=900&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=900&q=80',
+      'https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=900&q=80',
+    ],
+    description:
+      'A simple daily skincare kit featuring cleanser, moisturizer and SPF essentials.',
+    specifications: {
+      Pieces: '3',
+      SkinType: 'Combination / Normal',
+      Fragrance: 'Light',
+      Vegan: 'Yes',
+    },
+  },
+  {
+    id: 110,
+    name: 'The Systems Design Handbook',
+    slug: 'systems-design-handbook',
+    brand: 'TechPress',
+    category: 'Books',
+    price: 999,
+    originalPrice: 1299,
+    rating: 4.9,
+    reviews: 1221,
+    stock: 63,
+    image:
+      'https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=900&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=900&q=80',
+      'https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=900&q=80',
+    ],
+    description:
+      'An approachable guide to designing reliable services, APIs, databases and distributed systems.',
+    badge: 'Top Rated',
+    specifications: {
+      Pages: '412',
+      Language: 'English',
+      Format: 'Paperback',
+      Edition: '2nd',
+    },
+  },
+  {
+    id: 111,
+    name: 'PixelView 4K Monitor',
+    slug: 'pixelview-4k-monitor',
+    brand: 'PixelView',
+    category: 'Electronics',
+    price: 29999,
+    originalPrice: 34999,
+    rating: 4.6,
+    reviews: 407,
+    stock: 9,
+    image:
+      'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=900&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=900&q=80',
+      'https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=900&q=80',
+    ],
+    description:
+      '4K UHD monitor with accurate colors and a clean minimal bezel for work and entertainment.',
+    specifications: {
+      Resolution: '3840 × 2160',
+      RefreshRate: '144 Hz',
+      Panel: 'IPS',
+      Ports: 'HDMI / DisplayPort / USB-C',
+    },
+  },
+  {
+    id: 112,
+    name: 'BrewMate Coffee Maker',
+    slug: 'brewmate-coffee-maker',
+    brand: 'BrewMate',
+    category: 'Home',
+    price: 4299,
+    originalPrice: 5499,
+    rating: 4.4,
+    reviews: 249,
+    stock: 14,
+    image:
+      'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80',
+      'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=900&q=80',
+    ],
+    description:
+      'Compact coffee maker for consistent morning brews with a simple touch control interface.',
+    badge: 'Deal',
+    specifications: {
+      Capacity: '1.2 L',
+      Power: '950 W',
+      Controls: 'Touch buttons',
+      Warranty: '2 years',
+    },
+  },
+];
