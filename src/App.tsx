@@ -1,19 +1,23 @@
-import Header from './components/Header/Header'
+import { Provider } from 'react-redux';
+import AppRoutes from './routes/AppRoutes';
+import { store } from './store/store';
+import { AuthProvider } from './contexts/AuthContext';
+import { ThemeProvider } from './contexts/ThemeContext';
+import { ToastProvider } from './contexts/ToastContext';
+import ErrorBoundary from './components/UI/ErrorBoundary';
 
-function App(){
-  return(
-    <div>
-
-      <Header/>
-
-      <main>
-        <h1>Welcome to ShopSphere</h1>
-
-        <p>Your modern online shopping experience</p>
-      </main>
-
-    </div>
+export default function App() {
+  return (
+    <ErrorBoundary>
+      <Provider store={store}>
+        <ThemeProvider>
+          <AuthProvider>
+            <ToastProvider>
+              <AppRoutes />
+            </ToastProvider>
+          </AuthProvider>
+        </ThemeProvider>
+      </Provider>
+    </ErrorBoundary>
   );
 }
-
-export default App;
